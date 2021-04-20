@@ -3,7 +3,7 @@
     "clean": "rimraf ./public",
     "prebuild": "rimraf ./public",
     "dev": "netlify dev",
-    "build": "esbuild ./src/functions/cloudinary.ts --bundle --platform=node --outdir=public/functions"
+    "build": "esbuild ./src/functions/cloudinary-pull.ts ./src/functions/cloudinary-push.ts --bundle --platform=node --outdir=public/functions"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.75",
@@ -25,6 +25,7 @@
     "printWidth": 80
   },
   "dependencies": {
-    "cloudinary": "^1.25.1"
+    "cloudinary": "^1.25.1",
+    "got": "^11.8.2"
   }
 }

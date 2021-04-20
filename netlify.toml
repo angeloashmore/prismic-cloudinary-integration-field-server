@@ -1,8 +1,3 @@
 [build]
   command = "yarn build"
   functions = "./public/functions"
-
-[[redirects]]
-  from = "/cloudinary"
-  to = "/.netlify/functions/cloudinary"
-  status = 200
