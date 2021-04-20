@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "clean": "rimraf ./public",
+    "prebuild": "rimraf ./public",
+    "build": "esbuild ./src/functions/cloudinary.ts --bundle --platform=node --outdir=public/functions"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.75",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "esbuild": "^0.11.12",
+    "eslint": "^7.24.0",
+    "netlify-cli": "^3.19.0",
+    "netlify-lambda": "^2.0.3",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "proseWrap": "always",
+    "printWidth": 80
+  },
+  "dependencies": {
+    "cloudinary": "^1.25.1"
+  }
+}
