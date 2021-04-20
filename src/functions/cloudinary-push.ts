@@ -58,7 +58,7 @@ export const handler = async function (
     throw new Error('PRISMIC_IF_WRITE_TOKEN not defined')
   }
 
-  const notification = JSON.parse(event.body ?? '{}')
+  const notification = JSON.parse(event.body || '{}')
 
   if (isCloudinaryNotification(notification)) {
     if (isCloudinaryUploadSimpleNotification(notification)) {
