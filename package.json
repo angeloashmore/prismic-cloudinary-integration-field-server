@@ -5,6 +5,10 @@
     "dev": "netlify dev",
     "build": "esbuild ./src/functions/cloudinary-pull.ts ./src/functions/cloudinary-push.ts --bundle --platform=node --outdir=public/functions"
   },
+  "dependencies": {
+    "cloudinary": "^1.25.1",
+    "got": "^11.8.2"
+  },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.75",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
@@ -23,9 +27,5 @@
     "trailingComma": "all",
     "proseWrap": "always",
     "printWidth": 80
-  },
-  "dependencies": {
-    "cloudinary": "^1.25.1",
-    "got": "^11.8.2"
   }
 }
