@@ -1,6 +1,7 @@
 *.log
 node_modules
 public
+shell.nix
 
 # Local Netlify folder
 .netlify
