@@ -3,6 +3,6 @@
   functions = "./public/functions"
 
 [[redirects]]
-  from = "/"
-  to = "/.netlify/functions/index"
+  from = "/cloudinary"
+  to = "/.netlify/functions/cloudinary"
   status = 200
