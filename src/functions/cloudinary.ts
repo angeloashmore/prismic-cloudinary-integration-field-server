@@ -39,8 +39,6 @@ export const handler = async function (
     max_results: 50,
   })) as ResourceApiResponse
 
-  console.log(resourcesResponse.resources)
-
   const results = resourcesResponse.resources
     .sort((a, b) => dateStringComparitor(a.created_at, b.created_at))
     .map((resource) => cloudinaryResourceToPrismicPayload(resource))
